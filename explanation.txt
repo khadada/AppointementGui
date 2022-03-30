@@ -1,0 +1,15 @@
+?30/?03/?2022
+-----------
+# Explanation:
+Using the QFormLayout Class is pretty traightforward. In the display_widgets() method, The widgets that will be used in this GUI are instantiated in the beginning. An important one to point out is the mobile lineEdit object.
+	Any type of character can naturally be typed into the QLineEdit entry field. Howerver, if you want to limit the type, size, or manner in which characters can be input, then you can create an input mask by calling setInputMask() method. setInputMask() also can be used to set the maximum number of characters.
+	Two parts of this application have widgets arranged horizontally. For these widgets we will add them in QHBoxLayout object.
+	The QFormLayout object is create by:
+		app_form_layout = QFormLayout()
+	Next, all widgets and layouts are added to the form layout using the addRow() method. Finally the layout for our window is set using:
+        self.setLayout(app_form_layout)
+Widgets and layout can be add to QFormLayout object in the following ways:
+		app_form_layout.add(QWidget)
+		app_form_layout.add("text", QWidget)
+		app_form_layout.add(layout)
+The first one will add a widget and may cause it to stretch to fit the window. The second fits the text and its widget into column layout. The last one can be used to nest layouts.
