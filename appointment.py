@@ -1,7 +1,5 @@
 # Importing necessary modules and classes
 import sys
-from tkinter import Label, Spinbox
-from turtle import title
 from PyQt5.QtWidgets import (QApplication, QLabel, QPushButton, QWidget, QSpinBox, QHBoxLayout, QVBoxLayout, QComboBox,QLineEdit, QTextEdit,QMessageBox, QFormLayout)
 from PyQt5.QtGui import QFont
 from PyQt5.QtCore import Qt
